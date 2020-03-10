@@ -1,0 +1,201 @@
+#mixedSlider {
+  position: relative;
+}
+#mixedSlider .MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 5%;
+}
+#mixedSlider .MS-content .item {
+  display: inline-block;
+  width: 33.3333%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
+  padding: 0 10px;
+}
+@media (max-width: 991px) {
+  #mixedSlider .MS-content .item {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-content .item {
+    width: 100%;
+  }
+}
+#mixedSlider .MS-content .item .imgTitle {
+  position: relative;
+}
+
+
+#mixedSlider .MS-content .item a {
+  float: right;
+  margin: 0 20px 0 0;
+  font-size: 16px;
+  font-style: italic;
+  color: rgba(173, 0, 0, 0.82);
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: linear 0.1s;
+}
+#mixedSlider .MS-content .item a:hover {
+  text-shadow: 0 0 1px grey;
+}
+#mixedSlider .MS-controls button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  font-size: 50px;
+  top: 95px;
+  color: rgba(0, 0, 0, 0.4);
+  transition: 0.15s linear;
+}
+#mixedSlider .MS-controls button:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 992px) {
+  #mixedSlider .MS-controls button {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-controls button {
+    font-size: 20px;
+  }
+}
+#mixedSlider .MS-controls .MS-left {
+  left: 0px;
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-controls .MS-left {
+    left: -10px;
+  }
+}
+#mixedSlider .MS-controls .MS-right {
+  right: 0px;
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-controls .MS-right {
+    right: -10px;
+  }
+}
+#basicSlider { position: relative; }
+
+#basicSlider .MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 2%;
+  height: 50px;
+}
+
+#basicSlider .MS-content .item {
+  display: inline-block;
+  width: 20%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
+  line-height: 50px;
+  vertical-align: middle;
+}
+@media (max-width: 991px) {
+
+#basicSlider .MS-content .item { width: 25%; }
+}
+@media (max-width: 767px) {
+
+#basicSlider .MS-content .item { width: 35%; }
+}
+@media (max-width: 500px) {
+
+#basicSlider .MS-content .item { width: 50%; }
+}
+
+#basicSlider .MS-content .item a {
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+#basicSlider .MS-controls button { position: absolute; }
+
+#basicSlider .MS-controls .MS-left {
+  top: 35px;
+  left: 10px;
+}
+
+#basicSlider .MS-controls .MS-right {
+  top: 35px;
+  right: 10px;
+}
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    float: left;
+    margin-left: 24px;
+    
+    overflow: hidden;
+    margin-bottom: 29px;
+}
+.update {
+    margin-top: 5px;
+}
+.cards:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.containers {
+  padding: 2px 16px;
+}
+.containers h3{
+  text-align: center;
+
+}
+.containers p,.about-12  p{
+ color:gray;
+
+}
+.about-12 {
+
+  max-width: 1184px;
+  margin: auto;
+  text-align: justify;
+  padding: 44px;
+  overflow: hidden;
+  
+
+}
+.about-12 h2{
+  text-align:center;
+
+}
+@font-face {
+  font-family:WallingtonRegular-PYK7; 
+  src: url('../fonts/WallingtonRegular-PYK7.ttf');
+}
+.about-12 h2{
+  font-family:WallingtonRegular-PYK7; 
+}
+@font-face {
+  font-family:WallingtonRegular-PYK7; 
+  src: url('../fonts/WallingtonRegular-PYK7.ttf');
+}
+.containers h3{
+  font-family:WallingtonRegular-PYK7; 
+}
+@media screen and (max-width: 1028px) {
+  .cards  {
+    width: %; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+@media screen and (max-width: 800px) {
+  .cards  {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin-left:auto;
+	margin-right:auto;
+  }
+}
